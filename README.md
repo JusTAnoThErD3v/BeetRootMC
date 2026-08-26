@@ -9,4 +9,4 @@ Download the Release Candidate pyz file from the releases page:
 
 https://github.com/JusTAnoThErD3v/BeetRootMC/releases/tag/Release-Candidate
 
-Install <u>Python 3.14</u> 
+Install Python <u>3.14</u> 
