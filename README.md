@@ -5,7 +5,7 @@ A small portable Universal Python based minecraft launcher (yes its cracked. shh
 Beet MC currently ships with Minecraft Java Edition 1.19
 
 
-<img width="512" height="512" alt="canvas6464" src="https://github.com/user-attachments/assets/8c0d0819-1b0a-452e-bdf6-47cd5e65b542" />
+<img width="256" height="256" alt="canvas6464" src="https://github.com/user-attachments/assets/8c0d0819-1b0a-452e-bdf6-47cd5e65b542" />
 
 <img width="250" height="300" alt="393c6345608b488" src="https://github.com/user-attachments/assets/a5fbcb75-8e05-429d-be1d-fa3005613132" />
 
