@@ -1,5 +1,6 @@
 import tempfile
 
+import minecraft_launcher_lib
 import minecraft_launcher_lib as mc
 import subprocess
 import base64
@@ -21,24 +22,6 @@ with tempfile.NamedTemporaryFile(suffix=".mp3", delete=False) as f:
     f.write(decoded_data)
     intro = f.name
 
-version = "1.19"
-path = mc.utils.get_minecraft_directory()
-print("Minecraft is at or will be created at"+" "+path)
-def install():
-    mc.utils.get_installed_versions(version)
-    mc.install.install_minecraft_version(version, path)
-    print("Minecraft version is installed at"+" "+path)
-
-
-def launch():
-    configuration = {
-        "username": username.get(),
-        "uuid": uuid.get(),
-        "token": "Token",
-    }
-    minecraft_command = mc.command.get_minecraft_command(version, path, configuration)
-    subprocess.call(minecraft_command)
-
 app = tk.Tk()
 app.title("Minecraft Launcher")
 app.title("BeeRroot Cracked Minecraft Launcher")
@@ -48,27 +31,49 @@ label.pack()
 username = tk.StringVar(value="")
 uuid = tk.StringVar(value="")
 token = tk.StringVar(value="")
-tk.Label(app, text="Username, pick any username! You can steal skins...").pack()
+tk.Label(app, text="Username, pick any username but dont leave me empty! You can steal skins...").pack()
 tk.Entry(app, textvariable=username).pack()
-tk.Label(app, text="UUID, get one from: https://www.uuidgenerator.net/").pack()
+tk.Label(app, text="UUID, get one from: https://www.uuidgenerator.net/  dont leave me empty!").pack()
 tk.Entry(app, textvariable=uuid).pack()
+path = mc.utils.get_minecraft_directory()
+drop_description = tk.Label(app, text="Select a version. If you leave it as is it will install and launch 1.19 (shipped with beet).").pack()
+version = tk.StringVar(app)
+version.set("1.19")
+tk.Label(text="To play using neoforge click install and then launch to launch it.").pack()
+version_menu = tk.OptionMenu(app, version, "1.19", "1.20", "1.21.2", "1.19", "1.18", "1.17", "1.16", "1.15", "1.14", "1.13", "1.12", "1.12.2", "1.11", "1.11.1", "1.10", "1.9", "1.8.8")
+version_menu.pack()
+
+def install():
+    mc.utils.get_installed_versions(path)
+    mc.install.install_minecraft_version(version.get(), path)
+    print("Minecraft version is installed at"+" "+path)
+
+def launch():
+    configuration = {
+        "username": username.get(),
+        "uuid": uuid.get(),
+        "token": "offline",
+    }
+    minecraft_command = mc.command.get_minecraft_command(version.get(), path, configuration)
+    subprocess.call(minecraft_command)
+
+def neoforge_install():
+    loader = minecraft_launcher_lib.mod_loader.get_mod_loader("neoforge")
+    loader.install("1.21.2", path)
+print("Minecraft is at or will be created at"+" "+path)
+
+def neoforge_launch():
+    configuration = {
+        "username": username.get(),
+        "uuid": uuid.get(),
+        "token": "offline",
+    }
+    minecraft_command = mc.command.get_minecraft_command("neoforge-21.2.1-beta", path, configuration)
+    subprocess.call(minecraft_command)
+
 tk.Button(app, text="Install", command=install).pack()
 tk.Button(app, text="Launch", command=launch).pack()
+tk.Button(text="Install neoforge (21.2.1)", command=neoforge_install).pack()
+tk.Button(text="Launch neoforge (21.2.1)", command=neoforge_launch).pack()
 playsound3.playsound(intro, block=False)
 app.mainloop()
-
-#Legal Notice and Disclaimer
-
-#Last Updated: [26/8/2026]
-
-#This Minecraft launcher is provided as a third-party software project and is not affiliated with, endorsed by, or sponsored by Mojang Studios or Microsoft.
-
-#The developers and maintainers of this launcher do not condone, encourage, facilitate, or endorse software piracy, unauthorized access to Minecraft, or the use of unauthorized/cracked copies of the game. Users are responsible for ensuring that their use of the launcher and any associated software complies with all applicable laws and the terms of any applicable software licenses.
-
-#Any references to "cracking," "piracy," "cracked accounts," unauthorized copies, or similar subjects appearing on this website, within the launcher, or in associated materials are intended solely as humor, satire, parody, or jokes, unless explicitly stated otherwise. Such references should not be interpreted as instructions, encouragement, or an invitation to engage in unauthorized activity.
-
-#The launcher is intended for legitimate use, including use with properly obtained and authorized copies of Minecraft. We do not claim ownership of Minecraft, its trademarks, assets, or intellectual property.
-
-#By using this launcher, you acknowledge that you are responsible for your own actions and for complying with applicable laws, licenses, and terms of service. The developers and maintainers are not responsible for misuse of the software by individual users.
-
-#Nothing in this notice should be interpreted as legal advice or as a guarantee that any particular use of the launcher is lawful in every jurisdiction.
