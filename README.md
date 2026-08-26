@@ -1,5 +1,5 @@
 # BeetMC
-A small portable Python based minecraft launcher (yes its cracked. shhhhh).
+A small portable Universal Python based minecraft launcher (yes its cracked. shhhhh).
 
 # BEETMC LAUNCHER SHIPS WITH MINECRAFT JAVA 1.19
 
