@@ -27,9 +27,9 @@ Run the .pyz file using the python3.14 or python3 command specific to your os.
 
 ## Gallery
 
-<img width="546" height="588" alt="Screenshot 2026-08-27 at 13 13 56" src="https://github.com/user-attachments/assets/c0140d0e-8e29-44d8-b010-7326d96fe861" />
+<img width="590" height="627" alt="gallery1" src="https://github.com/user-attachments/assets/d1cef29f-8b72-4234-a498-d8f92481824d" />
 
-<img width="590" height="627" alt="Screenshot 2026-08-27 at 13 14 09" src="https://github.com/user-attachments/assets/920e4471-804d-4867-9aa5-e4a723d3de9e" />
+<img width="546" height="588" alt="gallery2" src="https://github.com/user-attachments/assets/f8eb934a-e344-4c84-b0a6-89edcbd9828d" />
 
 > [!WARNING]
 LecternMC is a small, independently developed project and is not affiliated with or endorsed by Mojang Studios or Microsoft.
