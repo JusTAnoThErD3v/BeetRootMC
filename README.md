@@ -20,9 +20,16 @@ Install Python 3.14 on your system from:
 https://www.python.org/downloads/release/python-3140/
 
 ## Running the pyz.
+
 Run the .pyz file using the python3.14 or python3 command specific to your os.
 
 -JusTAnoThErD3v
+
+## Gallery
+
+<img width="546" height="588" alt="Screenshot 2026-08-27 at 13 13 56" src="https://github.com/user-attachments/assets/c0140d0e-8e29-44d8-b010-7326d96fe861" />
+
+<img width="590" height="627" alt="Screenshot 2026-08-27 at 13 14 09" src="https://github.com/user-attachments/assets/920e4471-804d-4867-9aa5-e4a723d3de9e" />
 
 > [!WARNING]
 LecternMC is a small, independently developed project and is not affiliated with or endorsed by Mojang Studios or Microsoft.
