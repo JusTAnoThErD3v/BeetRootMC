@@ -30,9 +30,10 @@ Run the .pyz file using the python3.14 or python3 command specific to your os.
 <img width="49%" height="627" alt="gallery1" src="https://github.com/user-attachments/assets/d1cef29f-8b72-4234-a498-d8f92481824d" />
 <img width="49%" height="588" alt="gallery2" src="https://github.com/user-attachments/assets/f8eb934a-e344-4c84-b0a6-89edcbd9828d" />
 </p>
+
 > [!WARNING]
-> LecternMC is a small, independently developed project and is not affiliated with or endorsed by Mojang Studios or Microsoft.
-> At the moment, LecternMC does not support linking or authenticating with Microsoft accounts. This is primarily due to my current programming experience and the technical complexity involved in implementing Microsoft authentication correctly.
+LecternMC is a small, independently developed project and is not affiliated with or endorsed by Mojang Studios or Microsoft.
+At the moment, LecternMC does not support linking or authenticating with Microsoft accounts. This is primarily due to my current programming experience and the technical complexity involved in implementing Microsoft authentication correctly.
 The project is provided as-is and is developed primarily for experimentation, learning, and fun. Any references to "cracked" Minecraft, piracy, or similar topics within the project or its documentation should be understood as jokes or satire and are not intended to encourage or endorse software piracy or unauthorized access.
 Users are responsible for ensuring that their use of LecternMC and Minecraft complies with applicable laws and the relevant terms and licenses.
 LecternMC is not intended to replace legitimate Minecraft account ownership or authorization.
