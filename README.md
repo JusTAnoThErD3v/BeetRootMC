@@ -29,7 +29,7 @@ Run the .pyz file using the python3.14 or python3 command specific to your os.
 <p float=left>
 <img width="49%" height="627" alt="gallery1" src="https://github.com/user-attachments/assets/d1cef29f-8b72-4234-a498-d8f92481824d" />
 <img width="49%" height="588" alt="gallery2" src="https://github.com/user-attachments/assets/f8eb934a-e344-4c84-b0a6-89edcbd9828d" />
-</p>p
+</p>
 > [!WARNING]
 LecternMC is a small, independently developed project and is not affiliated with or endorsed by Mojang Studios or Microsoft.
 At the moment, LecternMC does not support linking or authenticating with Microsoft accounts. This is primarily due to my current programming experience and the technical complexity involved in implementing Microsoft authentication correctly.
