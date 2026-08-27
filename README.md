@@ -12,7 +12,7 @@ This section teaches you how to use the launcher
 ## Download.
 Download the Universal Release Candidate pyz file from the releases page:
 
-https://github.com/JusTAnoThErD3v/BeetRootMC/releases/tag/Release-Candidate
+https://github.com/JusTAnoThErD3v/Lectern-Launcher/releases/tag/Release-Candidate
 
 ## Dependencies.
 Install Python 3.14 on your system from:
